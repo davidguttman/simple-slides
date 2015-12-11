@@ -6,7 +6,10 @@
   "scripts": {
     "example": "wzrd example/index.js"
   },
-  "keywords": ["slides", "slideshow"],
+  "keywords": [
+    "slides",
+    "slideshow"
+  ],
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
   "dependencies": {
@@ -17,5 +20,13 @@
   },
   "directories": {
     "example": "example"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidguttman/simple-slides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidguttman/simple-slides/issues"
+  },
+  "homepage": "https://github.com/davidguttman/simple-slides#readme"
 }

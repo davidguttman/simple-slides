@@ -1,6 +1,6 @@
 var SS = require('..')
 
-var slideshow = SS.start(document.body, [
+SS.start(document.body, [
   // large text
   SS.title('simple-slides'),
 

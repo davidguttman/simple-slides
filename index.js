@@ -2,7 +2,7 @@ var h = require('hyperscript')
 
 var started
 
-var SimpleSlides = module.exports = {
+module.exports = {
   title: titleSlide,
   image: imageSlide,
   video: videoSlide,
@@ -41,8 +41,8 @@ var SimpleSlides = module.exports = {
   },
 
   changeSlide: function (n) {
-    if (this.slides[n-1]) {
-      this.slides[n-1](this.el)
+    if (this.slides[n - 1]) {
+      this.slides[n - 1](this.el)
     }
   },
 
@@ -69,7 +69,7 @@ function titleSlide (title) {
 
     el.appendChild(div)
     var rect = div.getBoundingClientRect()
-    div.style.marginTop = (window.innerHeight - rect.height)/2 - rect.height/2 + 'px'
+    div.style.marginTop = (window.innerHeight - rect.height) / 2 - rect.height / 2 + 'px'
   }
 }
 
@@ -81,13 +81,13 @@ function imageSlide (url, method) {
       style: {
         'width': window.innerWidth + 'px',
         'height': window.innerHeight + 'px',
-        'background': 'url('+url+') no-repeat center center fixed',
+        'background': 'url(' + url + ') no-repeat center center fixed',
         'background-size': method
       }
     }
   )
 
-  return function(el) {
+  return function (el) {
     el.innerHTML = ''
     el.appendChild(slide)
   }
@@ -120,7 +120,7 @@ function videoSlide (url, playAudio) {
 
       rect = video.getBoundingClientRect()
 
-      var margin = (window.innerHeight - rect.height)/2
+      var margin = (window.innerHeight - rect.height) / 2
       video.style.marginTop = margin + 'px'
       video.style.opacity = 1
     })

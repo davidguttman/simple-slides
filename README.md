@@ -8,7 +8,7 @@ Simple yet fully customizable/interactive slideshows for talks and presentations
 var SS = require('simple-slides')
 
 // Starts the show: left/right arrows to go forward/back
-var slideshow = SS.start(document.body, [
+SS.start(document.body, [
   // large text
   SS.title('simple-slides'),
 
